@@ -1,0 +1,173 @@
+
+/* Загальні налаштування */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: Inter, Arial, sans-serif;
+    color: #35455e;
+    font-size: 22px;
+}
+
+.site {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Заголовок і меню */
+header {
+    display: flex;
+    height: 150px;
+    color: white;
+}
+
+.logo {
+    width: 520px;
+    background-color: #22385f;
+    padding: 55px 35px;
+    font-size: 32px;
+    white-space: nowrap;
+}
+
+nav {
+    flex: 1;
+    background-color: #294773;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 10px;
+}
+
+nav a:hover {
+    background-color: #4d78ad;
+    text-decoration: underline;
+}
+
+/* Основна частина */
+main {
+    height: 1250px;
+    background-color: #f3f6fb;
+    padding: 70px 110px 0 70px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #22385f;
+    margin: 0 0 22px;
+}
+
+p {
+    margin: 0;
+}
+
+ol {
+    margin: 0;
+    padding-left: 25px;
+}
+
+#about {
+    height: 330px;
+}
+
+#projects {
+    height: 400px;
+}
+
+/* Розташування тексту і карток */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row > div:first-child {
+    max-width: 790px;
+}
+
+/* Картка проєктів */
+.project-card {
+    width: 430px;
+    height: 240px;
+    background-color: #dce8f7;
+    border-radius: 20px;
+    padding: 35px 40px;
+}
+
+.project-card h3 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    color: #22385f;
+}
+
+.project-card p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 19px;
+}
+
+.project-card strong {
+    font-size: 80px;
+    color: #22385f;
+}
+
+.project-card small {
+    font-size: 19px;
+}
+
+/* Картка навичок */
+.skills-card {
+    width: 430px;
+    height: 270px;
+    background-color: #294773;
+    color: white;
+    border-radius: 20px;
+    padding: 35px 40px;
+}
+
+.skills-card h3 {
+    margin: 0 0 30px;
+    font-size: 30px;
+}
+
+/* Корисні посилання */
+.resources {
+    height: 350px;
+    background-color: #dce8f7;
+    padding: 50px 70px;
+}
+
+.resources h4 {
+    margin: 35px 0 25px;
+    font-size: 22px;
+}
+
+a {
+    color: inherit;
+}
+
+/* Нижній колонтитул */
+footer {
+    height: 150px;
+    background-color: #22385f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    font-size: 18px;
+}
