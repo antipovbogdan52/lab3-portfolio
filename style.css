@@ -1,5 +1,3 @@
-
-/* Загальні налаштування */
 * {
     box-sizing: border-box;
 }
@@ -11,163 +9,216 @@ html {
 body {
     margin: 0;
     background-color: #eeeeee;
-    font-family: Inter, Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #35455e;
-    font-size: 22px;
 }
 
 .site {
     width: 1440px;
     max-width: 100%;
-    margin: auto;
+    margin: 0 auto;
+    background-color: #f3f6fb;
 }
 
-/* Заголовок і меню */
-header {
+/* HEADER */
+.header {
     display: flex;
     height: 150px;
-    color: white;
 }
 
 .logo {
     width: 520px;
     background-color: #22385f;
-    padding: 55px 35px;
+    color: #ffffff;
     font-size: 32px;
-    white-space: nowrap;
+    font-weight: 400;
+    padding: 20px 25px;
+    display: flex;
+    align-items: flex-start;
 }
 
-nav {
-    flex: 1;
+.menu {
+    width: 920px;
     background-color: #294773;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 25px;
 }
 
-nav a {
-    color: white;
+.menu a {
+    color: #ffffff;
     text-decoration: none;
-    font-size: 20px;
-    padding: 15px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.2s;
 }
 
-nav a:hover {
-    background-color: #4d78ad;
+.menu a:hover {
     text-decoration: underline;
+    color: #dce8f7;
 }
 
-/* Основна частина */
-main {
-    height: 1250px;
+/* MAIN */
+.main-content {
     background-color: #f3f6fb;
-    padding: 70px 110px 0 70px;
+    padding: 35px 28px 0 28px;
+}
+
+.section {
+    margin-bottom: 55px;
+}
+
+.about-section {
+    min-height: 170px;
 }
 
 h2 {
-    font-size: 36px;
+    margin: 0 0 18px 0;
+    font-size: 22px;
+    font-weight: 700;
     color: #22385f;
-    margin: 0 0 22px;
 }
 
-p {
-    margin: 0;
+.about-section p,
+.projects-text p,
+.projects-text ol,
+.contacts-text p,
+.resources p,
+.resources h4,
+.skills-card p,
+.project-card p,
+.project-text,
+.card-bottom-text {
+    font-size: 13px;
+    line-height: 1.25;
 }
 
-ol {
-    margin: 0;
-    padding-left: 25px;
-}
-
-#about {
-    height: 330px;
-}
-
-#projects {
-    height: 400px;
-}
-
-/* Розташування тексту і карток */
-.row {
+.row-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.row > div:first-child {
-    max-width: 790px;
+.left-block {
+    width: 720px;
 }
 
-/* Картка проєктів */
+.small-title {
+    margin-bottom: 4px;
+}
+
+.projects-text ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.contacts-section {
+    margin-top: 20px;
+}
+
+.contacts-text a,
+.resources a {
+    color: #5d6d82;
+}
+
+.contacts-text a:hover,
+.resources a:hover {
+    color: #22385f;
+}
+
+/* PROJECT CARD */
 .project-card {
-    width: 430px;
-    height: 240px;
+    width: 372px;
+    height: 153px;
     background-color: #dce8f7;
-    border-radius: 20px;
-    padding: 35px 40px;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 10px;
+    margin-right: 18px;
 }
 
 .project-card h3 {
-    margin: 0 0 10px;
-    font-size: 30px;
+    margin: 0 0 12px 0;
+    font-size: 18px;
     color: #22385f;
 }
 
-.project-card p {
+.project-number-row {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 19px;
+    gap: 14px;
+    margin-bottom: 16px;
 }
 
-.project-card strong {
-    font-size: 80px;
+.project-number {
+    font-size: 58px;
+    line-height: 1;
+    font-weight: 700;
     color: #22385f;
 }
 
-.project-card small {
-    font-size: 19px;
+.project-text {
+    color: #22385f;
 }
 
-/* Картка навичок */
+.card-bottom-text {
+    margin: 0;
+    color: #5d6d82;
+}
+
+/* SKILLS CARD */
 .skills-card {
-    width: 430px;
-    height: 270px;
-    background-color: #294773;
-    color: white;
-    border-radius: 20px;
-    padding: 35px 40px;
+    width: 372px;
+    height: 153px;
+    background-color: #2f4f83;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 8px;
+    margin-right: 48px;
+    color: #ffffff;
 }
 
 .skills-card h3 {
-    margin: 0 0 30px;
-    font-size: 30px;
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    color: #ffffff;
 }
 
-/* Корисні посилання */
+.skills-card p {
+    margin: 0;
+    color: #ffffff;
+}
+
+/* RESOURCES */
 .resources {
-    height: 350px;
     background-color: #dce8f7;
-    padding: 50px 70px;
+    min-height: 210px;
+    padding: 22px 28px 24px 28px;
+}
+
+.resources h2 {
+    margin-bottom: 10px;
 }
 
 .resources h4 {
-    margin: 35px 0 25px;
-    font-size: 22px;
+    margin: 0 0 18px 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #22385f;
 }
 
-a {
-    color: inherit;
-}
-
-/* Нижній колонтитул */
-footer {
-    height: 150px;
+/* FOOTER */
+.footer {
+    height: 78px;
     background-color: #22385f;
-    color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 70px;
-    font-size: 18px;
+    padding: 0 28px;
+}
+
+.footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 12px;
 }
